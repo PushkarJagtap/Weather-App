@@ -7,7 +7,7 @@ const time = document.getElementById("obseravationTime")
 const apiKey = "8b04fd047fbda4a0a3937eca6c646fbb";
 
 async function getWeatherData(){
-    const res = await fetch(`http://api.weatherstack.com/current?access_key=${"8b04fd047fbda4a0a3937eca6c646fbb"}&query=${cityInput.value}`)
+    const res = await fetch(`https://api.weatherstack.com/current?access_key=${"8b04fd047fbda4a0a3937eca6c646fbb"}&query=${cityInput.value}`)
     const data = await res.json();
     console.log(data);
       if (!cityInput.value) {
